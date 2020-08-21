@@ -1,0 +1,16 @@
+Commands:
+zbot _ <...>:
+create
+delete restart
+match:
+	pause
+	unpause
+	forceready
+	demo
+	map
+	knife
+	allrounds
+	setcfg
+	setteam1
+	setteam2
+

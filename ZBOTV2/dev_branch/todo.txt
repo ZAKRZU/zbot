@@ -1,0 +1,4 @@
+todo:
+-Add use of timers
+-Add teamnames to chat messages
+-Add pause message to spam

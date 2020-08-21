@@ -1,0 +1,15 @@
+version 0.49.1:
+-Fixed bug with overtime
+version 0.49:
+-Fixed bug where a match can't start if knife round isn't played!
+-Add join command to console
+-Added end match messages
+-Added support for overtimes
+version 0.48:
+-Changed message time from 15 seconds to 20 seconds
+-Added green color to "MATCH IS LIVE!!" message
+version 0.47:
+-Removed zbot_clinch cvar
+-Fixed after knife message
+version 0.46:
+-First changelog

@@ -1,0 +1,25 @@
+PrintToChatAll("%s %d seconds left.", pname);
+PrintToChatAll("%s %s [%d] / %s [%d]", pname, TeamGetName(TEAM_CT), TeamGetScore(TEAM_CT), TeamGetName(TEAM_TT), TeamGetScore(TEAM_TT));
+PrintToChatAll("%s %s [%d] / %s [%d]", pname, TeamGetName(TEAM_CT), TeamGetScore(TEAM_TT), TeamGetName(TEAM_TT), TeamGetScore(TEAM_CT));
+PrintToChatAll("%s %s is [%s] | %s is [%s]", pname, TeamGetName(TEAM_CT), TeamIsReadyString(TEAM_CT), TeamGetName(TEAM_TT), TeamIsReadyString(TEAM_TT));
+PrintToChatAll("%s Please type !ready if your team is ready!", pname);
+PrintToChatAll("%s Waiting for %s to choose side (!stay/!swtich)", pname, TeamGetName(g_knife_winner));
+PrintToChatAll("%s HalfTime Team: %s [%d] | Team: %s [%d]", pname, TeamGetName(TEAM_CT), TeamGetScore(TEAM_CT), TeamGetName(TEAM_TT), TeamGetScore(TEAM_TT));
+PrintToChatAll("%s Match is paused!", pname);
+PrintToChatAll("%s Please type !unpause if your team is ready!", pname);
+
+PrintToConsole(client, "zbot_create TeamName1 TeamName2 Config Password");
+PrintToConsole(client, "TeamName1 - Set name of team 1.");
+PrintToConsole(client, "TeamName2 - Set name of team 2.");
+PrintToConsole(client, "Config - Set config (with .cfg). Ex.(esl5on5.cfg)");
+PrintToConsole(client, "Password - Set server password (optional)");
+
+PrintToChatAll("%s Commands available: !ready, !notready, !stay, !switch", pname);
+PrintToConsole(client, "%s You must be a player!", pname);
+PrintToChatAll("%s TEAM SWAP!!", pname);
+PrintToChatAll("%s TEAM STAY!!", pname);
+PrintToChatAll("%s Team %s get a pause.", pname, TeamGetName(tmp_team));
+PrintToChatAll("%s Team %s requested a unpause.", pname, TeamGetName(tmp_team));
+PrintToChatAll("%s Team %s[%s] is ready!", pname, TeamGetName(teamIndex), TeamGetSide(teamIndex));
+PrintToChatAll("%s Team %s[%s] is not ready!", pname, TeamGetName(teamIndex), TeamGetSide(teamIndex));
+PrintToChatAll("KNIFE ROUND LIVE!");
